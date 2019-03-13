@@ -9,7 +9,7 @@
 
     <link rel="stylesheet" type="text/css" href="styles.css">
 
-    <title>Reverie™ Support Login</title>
+    <title>Reverie™ | Support Login</title>
 
   </head>
 
@@ -23,12 +23,13 @@
         <span><img src="Rlogo.png" alt="Home" class="logo" /></span>
         <div id="navmocontent">
           <ul>
-            <a href="devices.html"><li>Devices</li></a>
-            <a href="rem.html"><li>REM™</li></a>
-            <a href="ddstore.html"><li>DreamDeck™</li></a>
-            <a href="about.html"><li>Blog</li></a>
-            <a href="about.html"><li>About</li></a>
-            <a href="support.html"><li>Support</li></a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="devices.html">Devices</a></li>
+            <li><a href="rem.html">REM™</a></li>
+            <li><a href="ddstore.html">DreamDeck™</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
           </ul>
         </div>
       </nav>
@@ -75,12 +76,17 @@
 
     <div class="page">
       <h2>
-        Our Customer Service bots are currently experiencing high loads and
-        will be unavailable until further notice. We apologize for any
-        inconvenience.
+        Lensoft Customer Support Center
       </h2>
-      <hr class="largediv" />
-      <h3>
+      <form id="supportlogin" method="post">
+         <p>Login</p>
+         <hr class="smalldiv" />
+         <input type="text" name="ddid" placeholder="Dreamdeck ID">
+         <input type="password" name="passw" placeholder="Password">
+         <input type="submit" class="submitb" id="loginb" name="login" value="&#11166;&#11166;">
+         <p class="description"><a href="forgotpw.html">Forgot Password?</a></p>
+      </form>
+      <h3 style="padding-top: 5em">
         If you are experiencing issues connecting to the Reverie Dreamcloud
         service, check below for your server status by clicking your region.
       </h3>

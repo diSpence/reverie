@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="UTF-8">
+    <!-- Spencer Shifrin, 1/22/2019, Project V2, Support Page -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <title>Lensoft™ | Recovery Services</title>
+
+  </head>
+
+  <body>
+
+    <div id="top">
+    </div>
+
+    <header>
+      <nav id="navmo">
+        <span><img src="Rlogo.png" alt="Home" class="logo" /></span>
+        <div id="navmocontent">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="devices.html">Devices</a></li>
+            <li><a href="rem.html">REM™</a></li>
+            <li><a href="ddstore.html">DreamDeck™</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+          </ul>
+        </div>
+      </nav>
+      <nav id="nav">
+        <ul>
+        <li>
+          <a href="index.html">
+            <img src="Rlogo.png" alt="Home" class="logo" />
+          </a>
+        </li>
+        <li>
+          <a href="devices.html">
+            Devices
+          </a>
+        </li>
+        <li>
+          <a href="rem.html">
+            REM™
+          </a>
+        </li>
+        <li>
+          <a href="ddstore.html">
+            DreamDeck™
+          </a>
+        </li>
+        <li>
+          <a href="blog.html">
+            Blog
+          </a>
+        </li>
+        <li>
+          <a href="about.html">
+            About
+          </a>
+        </li>
+        <li>
+          <!-- M1LO13: Link to internal site page -->
+          <a href="support.html">
+            Support
+          </a>
+        </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="page">
+      <h2>
+        Lensoft Recovery
+      </h2>
+      <h4>We'll have you back up and running shortly. Just fill out the form below to notify our experts.</h4>
+      <br><hr class="smalldiv" />
+      <form id="recovery">
+        <!--
+          M7LO5 - Demonstrate the use of a text box in a form:
+          The following input element is a textbox with a name and placeholder text.
+        -->
+        <input type="text" name="recddid" placeholder="Enter your Account or Device ID">
+        <hr class="smalldiv" />
+        <div class="dropdown">
+          <p>What type of account or device are you having trouble using?</p>
+          <!--
+            M7LO8 - Demonstrate the use of a selection list in a form:
+            The following select and option elements make up a selection list.
+          -->
+          <select name="idtype">
+            <option value="">Dreamdeck Account</option>
+            <option value="">Myth Account</option>
+            <option value="">Reverie Device</option>
+            <option value="">REM Module&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Specify Module Below)</option>
+            <option value="">LENZ-Series Headset&nbsp;&nbsp;&nbsp;(Specify Generation Below)</option>
+          </select><br><br>
+        </div>
+        <!--
+          M7LO9 - Demonstrate the use of a text area in a form:
+          The following textarea element has 10 rows and 50 columns.
+        -->
+        <textarea name="issue" rows="10" cols="50" placeholder="Please describe in detail what you experienced before being locked out of your device or account."></textarea><br>
+        <!--
+          M7LO6 - Demonstrate the use of check boxes in a form:
+          The following input element is a check box.
+        -->
+        <p><input type="checkbox" name="notifications"> Notify me about responses to this ticket via the e-mail or phone number listed on my account</p><br>
+        <!--
+          M7LO10 - Demonstrate the use of a submit button in a form:
+          The following input element is a submit button with a modified value.
+        -->
+        <input class="submitb" id="ticketsub" type="submit" name="ticketsub" value="Submit Ticket &#11166;">
+      </form>
+    </div>
+    <footer>
+      <p>
+        <a href="#top">
+          Back to top ↑
+          <img src="lslogo.png" alt="Lensoft Logo">
+        </a>
+      </p>
+    </footer>
+  </body>
+
+</html>
