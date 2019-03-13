@@ -1,0 +1,41 @@
+table th,td {
+  border: 3px solid gray;
+  height: 1.4em;
+  padding: 8px;
+}
+
+table th {
+  background-color: black;
+  color: rgb(130, 210, 255);
+  font-weight: normal;
+}
+
+table td {
+  color: white;
+  font-size: 0.9em;
+  vertical-align: top;
+}
+
+/**/
+
+col#firstCol {
+  column-width: 24%;
+}
+
+col.dataCols {
+  column-width: 19%;
+}
+
+/**/
+
+table thead {
+  height: 60px;
+}
+
+table thead tr:first-of-type th:first-of-type {
+  font-size: 2em;
+}
+
+table thead tr:first-of-type th:not(first-of-type) {
+  background-color: rgba(255, 255, 255, 0)
+}

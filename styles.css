@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* Spencer Shifrin, 2/19/2019, Project V3, CSS styles */
+/*
+  M3LO1 - Demonstrate the use of a CSS reset style sheet:
+  Some CSS rules that reset certain user-styled text and spacing elements.
+*/
+:link,:visited {
+  text-decoration:none
+}
+#nav ul, ol {
+  list-style: none;
+}
+h1,h2,h3,h4,h5,h6,p {
+  font-size: 1em;
+}
+div, section {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main Page Styles */
+html {
+  width: 100%;
+}
+body {
+  background-color: #999999;
+  background-color: hsl(0, 0%, 60%);
+}
+hr.devicediv {
+  width: 75%;
+  margin-top: 5em;
+  margin-bottom: 20em;
+}
+hr.largediv {
+  width: 75%;
+  margin-top: 5em;
+  margin-bottom: 10em;
+}
+hr.smalldiv {
+  width: 75%;
+}
+
+/* Link Styles */
+
+a[href] {
+  text-decoration: none;
+}
+a[href]:link, a[href]:visited {
+  color: hsl(0, 0%, 80%);
+}
+a[href]:hover, a[href]:active {
+  color: hsl(0, 0%, 40%);
+}
+
+/* Nav bar styles */
+#navmo {
+  display: none;
+}
+.logo {
+  width: 2em;
+  height: auto;
+}
+#nav {
+  text-align: center;
+}
+#nav ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: hsl(0, 0%, 95%)
+}
+#nav ul li {
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+#nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  font-family: Trebuchet MS;
+  font-size: 1.5em;
+}
+#nav ul li a:link, #nav ul li a:visited {
+  color: #999999;
+}
+#nav ul li a:hover, #nav ul li a:active {
+  color: #666666;
+}
+
+/* Page content styles */
+
+div.page {
+  font-family: Trebuchet MS;
+  padding-top: 10em;
+  padding-bottom: 35em;
+  min-height: 15em;
+  max-width: 60em;
+  margin: auto;
+  text-align: center;
+  clear: both;
+}
+div.page h1 {
+  font-size: 3em;
+  color: #FFFFFF;
+}
+div.page h2 {
+  font-size: 2em;
+  color: #FFFFFF;
+}
+div.page h3 {
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+div.page p {
+  font-size: 1.25em;
+  color: #FFFFFF;
+}
+div.page p.description {
+  font-size: 95%;
+}
+div.changelog {
+  display: grid;
+}
+.v3 {
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+.v2 {
+  grid-row-start: 2;
+  grid-column-start: 1;
+}
+.v1 {
+  grid-row-start: 2;
+  grid-column-start: 2;
+}
+
+/* Front page headlines */
+
+/*
+  M5LO5: Demonstrate the use of flexboxes on a web page.
+  M5LO7: Demonstrate use of properties of flexbox containers.
+
+  This flexbox container has a "row" direction, giving the headline links on the
+  front page the ability to be displayed side-by-side.
+*/
+
+#fpheadlines {
+  display: flex;
+  flex-flow: row;
+}
+a.headline {
+  position: relative;
+  display: flex;
+  top: -7.5em;
+}
+a.headline p {
+  display: flex;
+  padding: 5%;
+  margin: 1%;
+  background: linear-gradient(hsl(0, 0%, 45%), hsl(0, 0%, 60%));
+  max-width: 15em;
+}
+
+/* Device page styles */
+
+section.device {
+  background: linear-gradient(hsl(207, 100%, 59%) 20%, hsl(0, 0%, 60%) 99%);
+  min-height: 27em;
+  float: left;
+  width: 33.2%;
+  margin-top: 3em;
+  border-top: 2px solid white;
+  border-radius: 20px;
+}
+section.device p {
+  padding: 1em;
+}
+#devicemiddle {
+  background: linear-gradient(hsl(0, 0%, 45%), hsl(0, 0%, 60%) 90%);
+  float: left;
+  width: 33%;
+  margin-top: 1em;
+  border-top: 2px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-radius: 20px;
+  box-shadow: 0 0 3px hsl(0, 0%, 30%);
+}
+#devicemiddle p {
+  padding: 1em;
+}
+
+/* Myth styles */
+
+#myth {
+  background: linear-gradient(hsl(100, 85%, 30%) 1%, hsl(100, 35%, 30%) 99%);
+  border-top: 3px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 0 0 1px hsl(0, 0%, 30%);
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+/* Dreamdeck store styles */
+
+/*
+  M6LO7: Demonstrate how to format a table with CSS.
+  The rules in this section all apply to the table found on the "Dreamdeck" page,
+  giving it it's sizing, coloring, borders, and shadow, among other features.
+*/
+
+#ddstore {
+  width: 100%;
+  border: 3px double gray;
+  background-color: hsl(207, 100%, 40%);
+  border-collapse: collapse;
+  box-shadow: 0 0 1em 0.5em gray;
+  border: 1px solid gray;
+}
+#ddstore thead tr:first-of-type {
+  background-color: hsl(207, 100%, 59%);
+  border-bottom: 1em solid gray;
+}
+#ddstore thead tr:nth-of-type(2) {
+  background-color: hsl(0, 0%, 30%);
+}
+#ddstore tbody tr td:first-of-type {
+  background-color: hsl(207, 100%, 59%);
+}
+#ddstore td {
+  padding: 3em;
+  border-bottom: 0.25em solid gray;
+}
+
+/* Blog page styles */
+
+#blog {
+  background: hsl(0, 0%, 45%);
+  color: hsl(207, 100%, 59%);
+  padding: 1em;
+  margin: auto;
+  border: 1px groove white;
+  box-shadow: 0 0 10px black;
+}
+#blog dd {
+  background: hsl(207, 100%, 59%);
+  padding: 0.25em;
+  margin: 1em;
+  border: 1px solid white;
+  box-shadow: 0 0 3px black;
+}
+#blog dd p::first-letter {
+  font-size: 1.25em;
+}
+#blog dd p a {
+  text-decoration: none;
+}
+#blog a:link dd, #blog a:visited dd {
+  background-color: hsl(207, 100%, 59%);
+}
+#blog a:hover dd, #blog a:active dd {
+  background-color: hsl(207, 100%, 40%);
+}
+#servermap {
+  border: 3px double white;
+}
+#servermap img {
+  opacity: 0.6;
+}
+#serverlist {
+  list-style-type: none;
+}
+#serverlist li {
+  padding-top: 10em;
+}
+
+/* Footer */
+
+footer {
+  position: relative;
+  left: -1em;
+  bottom: -1em;
+  background: hsl(0, 0%, 55%);
+  border-top: 1px solid hsl(0, 0%, 45%);
+  border-bottom: 1px solid hsl(0, 0%, 45%);
+  font-family: Trebuchet MS;
+  text-align: center;
+  margin-right: -1.5em;
+  overflow: auto;
+  clear: both;
+  margin-top: -1em;
+}
+footer img {
+  position: absolute;
+  top: -3.5em;
+  float: right;
+  transform: scale(0.1);
+  -webkit-transform: scale(0.1);
+  -ms-transform: scale(0.1);
+}
+
+/* Mobile */
+
+/*
+  M5LO3: Use media queries to format a page differently for phones vs. PCs.
+  M5LO4: Use CSS for pull down menus.
+
+  For mobile devices (in this case, screens 600px or smaller), the navigation
+  bar is replaced with a drop-down menu.
+*/
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    position: absolute;
+  }
+  #nav {
+    display: none;
+  }
+  #navmo {
+    position: absolute;
+    display: inline-block;
+    font-family: Trebuchet MS;
+    text-decoration: none;
+    letter-spacing: 0.1em;
+    font-size: 1.5em;
+    background-color: hsl(0, 0%, 55%)
+  }
+  #navmo ul {
+    list-style-type: none;
+    margin-left: 1em;
+  }
+  #navmo ul li {
+    padding: 0.25em;
+    border-bottom: 1px solid gray;
+  }
+  #navmocontent {
+    display: none;
+  }
+  #navmo:hover #navmocontent {
+    display: inline-block;
+  }
+}
